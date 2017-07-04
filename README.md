@@ -6,8 +6,6 @@ The following is a TDD Kata, an exercise in coding, refactoring and test-first.
 * Do one task at a time. The trick is to learn to work incrementally.
 * Make sure you only test for correct inputs. There is no need to test for invalid inputs for this kata.
 
----
-
 ## The kata
 
 ### Step 1: the simplest thing
