@@ -49,8 +49,8 @@ Conditional boundaries reference: http://pitest.org/quickstart/mutators/#CONDITI
 
 
 ## Tools
-- Code coverage, [JaCoCo](http://www.eclemma.org/jacoco/trunk/doc/maven.html)
-- Mutation testing, [Pitest](http://pitest.org/)
+- [JaCoCo](http://www.eclemma.org/jacoco/trunk/doc/maven.html) (Code coverage)
+- [Pitest](http://pitest.org/) (Mutation testing)
 
 
 Text adapted from [xpeppers](https://github.com/xpeppers/string-calculator-kata).  
