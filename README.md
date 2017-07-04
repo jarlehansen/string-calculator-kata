@@ -25,35 +25,27 @@ Allow the `add()` method to handle new lines between numbers (instead of commas)
 * the following input is ok:  `"1\n2,3"` (will equal 6)
 * the following input is NOT ok:  `"1,\n"` (not need to prove it - just clarifying)
 
-### Step 4: support different delimiters
-Support different delimiters: to change a delimiter, the beginning of the string will contain a separate line that looks like this:   
-
-`"//[delimiter]\n[numbers...]"`
-
-For example `"//;\n1;2"` should return 3 where the default delimiter is `';'`.
-
-The first line is optional. 
-All existing scenarios should still be supported.
-
-### Step 5: negative numbers
+### Step 4: negative numbers
 Calling `add()` with a negative number will throw an exception `"negatives not allowed"` - and the negative that was passed.
 
 For example `add("1,4,-1")` should throw an exception with the message `"negatives not allowed: -1"`.
 
 If there are multiple negatives, show all of them in the exception message.
 
-### Step 6: ignore big numbers
+### Step 5: ignore big numbers
 Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2
 
-### Step 7: code coverage
+### Step 6: code coverage
 Generate a code coverage report by running `mvn clean package`.  
 Open the report in a browser `/target/site/jacoco/index.html`.  
 Are there any parts of the code that is not covered by tests? If so, can you fix them?
 
-### Step 8: mutation test
-Generate a mutation testing report by running: `mvn org.pitest:pitest-maven:mutationCoverage`.  
+### Step 7: mutation test
+Generate a mutation testing report by running: `mvn clean package org.pitest:pitest-maven:mutationCoverage`.  
 Open the report in a browser `/target/pit-reports/<timestamp>/index.html`.  
 Are there any warnings in the mutation coverage? If so, can you fix them?
+
+Conditional boundaries reference: http://pitest.org/quickstart/mutators/#CONDITIONALS_BOUNDARY
 
 
 ## Tools
