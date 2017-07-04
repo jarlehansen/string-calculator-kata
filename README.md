@@ -6,16 +6,9 @@ The following is a TDD Kata, an exercise in coding, refactoring and test-first.
 * Do one task at a time. The trick is to learn to work incrementally.
 * Make sure you only test for correct inputs. There is no need to test for invalid inputs for this kata.
 
+---
+
 ## The kata
-
-* [Step 1: the simplest thing](#step-1-the-simplest-thing)
-* [Step 2: handle an unknown amount of numbers](#step-2-handle-an-unknown-amount-of-numbers)
-* [Step 3: handle new lines between numbers](#step-3-handle-new-lines-between-numbers)
-* [Step 4: negative numbers](#step-4-negative-numbers)
-* [Step 5: ignore big numbers](#step-5-ignore-big-numbers)
-* [Step 6: code coverage](#step-6-code-coverage)
-* [Step 7: mutation test](#step-7-mutation-test)
-
 
 ### Step 1: the simplest thing
 Create a simple String calculator with a method `int add(String numbers)`.
