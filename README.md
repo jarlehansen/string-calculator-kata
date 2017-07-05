@@ -42,7 +42,7 @@ Are there any parts of the code that is not covered by tests? If so, can you fix
 
 ### Step 7: mutation test
 Generate a mutation testing report by running: `mvn clean package org.pitest:pitest-maven:mutationCoverage`.  
-Open the report in a browser `/target/pit-reports/<timestamp>/index.html`.  
+Open the report in a browser `/target/pit-reports/index.html`.  
 Are there any warnings in the mutation coverage? If so, can you fix them?
 
 Conditional boundaries reference: http://pitest.org/quickstart/mutators/#CONDITIONALS_BOUNDARY
